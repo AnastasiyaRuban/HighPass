@@ -1,0 +1,68 @@
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 68px;
+  background-color: $colorDarc;
+
+  &__title {
+    @include section-title;
+    grid-area: title;
+    margin-bottom: 5px;
+    color: $colorwhite;
+  }
+
+  &__content {
+    @include grid-tr-2;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 28px;
+    color: $colorLight;
+  }
+
+  &__content-right {
+    @include flex-col;
+  }
+
+  &__photo {
+    height: 100%;
+    margin-bottom: 22px;
+    transform: translateY(-3px);
+  }
+
+  &__distribution-label {
+    @include text-tt-24-22;
+    display: block;
+    margin-bottom: 16px;
+    color: $colorwhite;
+  }
+
+  &__distribution-form {
+    display: flex;
+    position: relative;
+  }
+
+  &__form-input {
+    flex: 1 1 100%;
+    margin-right: 30px;
+    padding: 15px 23px;
+    border: 1px solid transparent;
+    background-color: #4a4a4a;
+    color: $colorwhite;
+
+    &::placeholder {
+      @include placeholder;
+      color: $colorLight;
+    }
+    &:hover::placeholder {
+      color: $colorHover;
+    }
+    &:focus {
+      border-color: $colorHover;
+    }
+  }
+
+  &__form-button {
+    @include button;
+  }
+}

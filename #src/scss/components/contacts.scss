@@ -1,0 +1,166 @@
+.contacts {
+  padding-bottom: 69px;
+  &__title {
+    @include section-title;
+    margin-bottom: 22px;
+    color: $colorDarc;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(50%, 850px) 410px;
+    grid-template-rows: 460px;
+    gap: 30px;
+  }
+
+  &__map {
+    position: relative;
+  }
+}
+
+#map {
+  height: 460px;
+  opacity: 0.9;
+}
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+[class*="copyright"],
+[class*="gotoymaps"],
+[class*="gototaxi"],
+[class*="gototech"],
+[class*="zoom__scale"] {
+  display: none;
+}
+
+.adress {
+  @include flex-col;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  max-width: 410px;
+  padding: 20px 20px 150px 60px;
+  background-color: $colorDarc;
+  opacity: 0;
+  z-index: 10000;
+  transition-property: left, opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  &__name {
+    @include text-tt-24-22;
+    margin-bottom: 5px;
+    color: $colorLight;
+  }
+
+  &__adress {
+    margin-bottom: 2px;
+    max-width: 90%;
+    font-size: 16px;
+    line-height: 28px;
+    color: $colorLight;
+  }
+
+  &__tel {
+    @include flex-v-center;
+    & svg {
+      fill: #9e9e9e;
+    }
+  }
+
+  &__tel-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: $colorwhite;
+    font-family: "TTFirsNeueRegular";
+  }
+
+  &__close {
+    position: relative;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    border-radius: 100px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 1px;
+      left: 4px;
+      background-color: $colorwhite;
+    }
+
+    &::after {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &::before {
+      bottom: 10px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.adress.open {
+  left: 0;
+  opacity: 0.85;
+}
+
+.callback {
+  transform: translateY(-6px);
+  &__title {
+    @include text-tt-24-22;
+    margin-bottom: 5px;
+    color: $colorDarc;
+  }
+
+  &__description {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999;
+  }
+
+  &__input {
+    height: 50px;
+    width: 100%;
+    padding: 16px 23px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    background-color: #e9e9e9;
+
+    &::placeholder {
+      @include placeholder;
+    }
+    &:hover::placeholder {
+      color: $colorHover;
+    }
+    &:focus {
+      border-color: $colorHover;
+    }
+  }
+
+  &__textarea {
+    margin-bottom: 15px;
+    height: 150px;
+    width: 100%;
+    padding: 16px 23px;
+    background-color: #e9e9e9;
+    &::placeholder {
+      @include placeholder;
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}
+
+.form-group {
+  position: relative;
+}

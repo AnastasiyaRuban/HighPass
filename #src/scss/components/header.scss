@@ -1,0 +1,103 @@
+.header {
+  background-color: $colorDarc;
+
+  &__container {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 21px;
+    @include flex-all-sb;
+  }
+
+  &__logo {
+    margin-right: 52px;
+    & svg {
+      width: 190px;
+    }
+  }
+  &__search {
+    display: none;
+    cursor: pointer;
+  }
+  &__tel {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.social {
+  @include flex-v-center;
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.social__link svg {
+  fill: #cacaca;
+}
+.social__link:hover svg {
+  fill: $colorHover;
+}
+.social__link:focus svg {
+  fill: $colorFocus;
+}
+.social__link:active svg {
+  fill: $colorActive;
+}
+.search {
+  position: absolute;
+  height: 30px;
+  right: 23px;
+  background-color: $colorDarc;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: none;
+    margin-right: 5px;
+  }
+
+  &__input {
+    width: 0;
+    border-bottom: 1px solid #e9e9e9;
+    transition: width 0.3s ease-in-out;
+    color: $colorwhite;
+    &::placeholder {
+      color: #e9e9e9;
+      font-family: "TTFirsNeueRegular";
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__input.active {
+    width: 149px;
+  }
+}
+
+.search__icon.active {
+  display: block;
+}
+
+.header__search.opac0 {
+  opacity: 0;
+}
+
+.search:hover .search__input {
+  border-color: $colorHover;
+}
+.search__input.write {
+  border-color: $colorActive;
+}
+.search:focus .search__input {
+  border-color: $colorFocus;
+}

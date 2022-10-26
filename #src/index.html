@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High pass</title>
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/media.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body >
+  <h1 hidden>High pass</h1>
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="logo header__logo">
+        <svg  height="31">
+          <use  xlink:href="img/icons/icons.svg#Logo"></use>
+        </svg>
+      </a>
+      <div class="header__menu">
+        <button class="button-reset burger">
+          <span class="burger__line"></span>
+        </button>
+        <div class="menu">
+          <nav class="nav menu__nav">
+            <ul class="nav__list list-reset">
+              <li class="nav__item"><a href="#about" class="link-reset nav__link">О студии</a></li>
+              <li class="nav__item"><a href="#projects" class="link-reset nav__link">Наши проекты</a></li>
+              <li class="nav__item"><a href="#" class="link-reset nav__link">Услуги</a></li>
+              <li class="nav__item"><a href="#" class="link-reset nav__link">Мастер-классы</a></li>
+              <li class="nav__item"><a href="#contacts" class="link-reset nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__tel">
+            <svg width="22" height="22">
+              <use xlink:href="img/icons/icons.svg#call"></use>
+            </svg>
+            <a href="tel:+749542423532" class="link-reset"> +7 (495) 42-423-532</a>
+          </div>
+        </div>
+      </div>
+    <button class="header__search button-reset">
+      <svg width="25" height="25">
+        <use  xlink:href="img/icons/icons.svg#search"></use>
+      </svg>
+    </button>
+    <form class="search">
+      <button class="button-reset search__icon">
+        <svg width="25" height="25">
+        <use  xlink:href="img/icons/icons.svg#search"></use>
+      </svg>
+      </button>
+      <input type="text" class="search__input input-reset" placeholder="Что будем искать?">
+      <button class="search__close button-reset"></button>
+    </form>
+    <div class="header__social social">
+      <a href="" class="link-reset social__link social__inst">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#instagram"></use>
+        </svg>
+      </a>
+      <a href="" class="link-reset social__link social__fb">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#fb"></use>
+        </svg>
+      </a>
+      <a href="" class="link-reset social__link social__vk">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#vk"></use>
+        </svg>
+      </a>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero__left">
+        <h3 class="hero__subtitle subtitle">Мастер-класс от Игоря Робова</h3>
+        <h2 class="hero__title title">Неоновый фотосет 2.0<br>7 июля 20:00</h2>
+        <a href="" class="hero__button link-reset">Узнать больше</a>
+        <div class="hero__teg teg">#мастеркласс</div>
+      </div>
+      <div class="hero__right">
+        <p class="hero__description description">Работы участников предыдущего мастер-класса</p>
+        <div class="hero__photo">
+          <img src="img/hero/wooman.webp" class=" hero__photo-1" alt="Фото девушки">
+          <img src="img/hero/wooman_2.webp" class=" hero__photo-2" alt="Фото девушки">
+          <img src="img/hero/wooman_3.webp" class=" hero__photo-3" alt="Фото девушки">
+        </div>       
+      </div>
+    </section>
+    <section id="about" class="about-us">
+      <div class="about-us__container container">
+        <h2 class="about-us__title title">О студии</h2>
+        <div class="about-us__content">
+          <p class="about-us__description description">В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий  фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально&nbsp-&nbspтехнической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.</p>
+          <div class="about-us__content-right about-us__distribution">
+            <img src="img/about/Photo-about.jpg" alt="Фотоаппарат" class="about-us__photo">
+            <label class="about-us__distribution-label description">Подписаться на рассылку</label>
+            <form action="#" method="POST" enctype="multipart/form-data" class="about-us__distribution-form about-us__form" >
+              <input type="mail" name="email" class="about-us__form-input input-reset email-input-about" placeholder="E-mail">
+              <button class="about-us__form-button button-reset">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects container">
+      <h2 class="projects__title title">Наши проекты</h2>
+      <div class="projects__container">
+        <div class="projects__card projects__landscape small-card">
+          <img class="projects__img" src="img/projects/landscape.webp" alt="Фото-пейзаж">
+          <p class="description projects__description">Синтетически, смешаны с не уникальными данными до степени...</p>
+          <div class="projects__date small-card__date">
+            <svg width="14" height="14" class="small-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text small-card__date-text description">16 июня</p>
+          </div>
+          <div class=" projects__teg teg">#пейзаж</div>
+        </div>
+        <div class="projects__card projects__portrait-man small-card">
+          <img class="projects__img" src="img/projects/man-projects.webp" alt="Портрет мужчины">
+          <p class="description projects__description">В своём стремлении улучшить опыт мы упускаем, что явные...</p>
+          <div class="projects__date small-card__date">
+            <svg width="14" height="14" class="small-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text small-card__date-text description">28 мая</p>
+          </div>
+          <div class=" projects__teg teg">#портрет</div>
+        </div>
+        <div class="projects__card projects__subject small-card">
+          <img class="projects__img" src="img/projects/subject.webp" alt="Натюрморт">
+          <p class="description projects__description">Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада</p>
+          <div class="projects__date small-card__date">
+            <svg width="14" height="14" class="small-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text small-card__date-text description ">14 мая</p>
+          </div>
+          <div class=" projects__teg teg">#предмет</div>
+        </div>
+        <div class="projects__card projects__fuji big-card">
+          <h3 class="projects__card-title title">Cемантический<br>разбор</h3>
+          <p class="description projects__description big-card__description">В рамках спецификации современных стандартов, интерактивные прототипы</p>
+          <div class="projects__date big-card__date">
+            <svg width="14" height="14" class="big-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text big-card__date-text description">9 апреля</p>
+          </div>
+          <div class=" projects__teg teg">#fuji</div>
+          <a href="" class="projects__link">О проекте</a>
+        </div>
+        <div class="projects__card projects__oblivion big-card">
+          <h3 class="projects__card-title title">Забвение</h3>
+          <p class="description projects__description big-card__description">Играет важную роль в формировании глубокомысленных рассуждений</p>
+          <div class="projects__date big-card__date">
+            <svg width="14" height="14" class="big-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text big-card__date-text description ">20 марта</p>
+          </div>
+          <div class=" projects__teg teg">#проектзабвение</div>
+          <a href="" class="projects__link">О проекте</a>
+        </div>
+        <div class="projects__card projects__retouch small-card">
+          <img class="projects__img" src="img/projects/orange_projects.webp" alt="Фото с апельсинами">
+          <p class="description projects__description">Как принято считать, многие известные личности и по сей день остаются уделом либералов...</p>
+          <div class="projects__date small-card__date">
+            <svg width="14" height="14" class="small-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text small-card__date-text description ">9 марта</p>
+          </div>
+          <div class=" projects__teg teg">#ретушь</div>
+        </div>
+        <div class="projects__card projects__portrait-wooman small-card">
+          <img class="projects__img" src="img/projects/wooman_2-projects.webp" alt="Портрет женщины">
+          <p class="description projects__description">С учётом сложившейся международной обстановки, новая модель организационной...</p>
+          <div class="projects__date small-card__date">
+            <svg width="14" height="14" class="small-card__icon">
+              <use xlink:href="img/icons/icons.svg#calendar"></use>
+            </svg>
+            <p class="projects__date-text small-card__date-text description ">1 марта</p>
+          </div>
+          <div class=" projects__teg teg">#портрет</div>
+        </div> 
+      </div>
+    </section>
+    <section class="contacts container">
+      <h2 class="contacts__title title">Контакты</h2>
+      <div class="contacts__container">
+        <div id="contacts" class="contacts__map map" >
+          <div id="map"></div>
+          <div class="map__adress adress">
+            <button class="adress__close button-reset"></button>
+            <div class="adress__container">
+              <h3 class="adress__name subtitle">Студия “High pass”</h3>
+              <p class="adress__adress description">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82</p>
+              <div class="adress__tel">
+                <svg width="22" height="22">
+                  <use xlink:href="img/icons/icons.svg#call"></use>
+                </svg>
+                <a href="tel:+749542423532" class="adress__tel-link link-reset"> +7 (495) 42-423-532</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__callback callback">
+          <h3 class="callback__title title">Оставить заявку</h3>
+          <p class="callback__description description">Оставьте ваши данные, указав в графе “Комментарий” желаемые время и дату съемки или другого мероприятия</p>
+          <form  action="#" method="POST" enctype="multipart/form-data" class="callback__form">
+            <div class="form-group">
+              <input type="text" name="Имя" class="callback__input input-reset name-input" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="mail" name="email" class="callback__input input-reset email-input" placeholder="E-mail">
+            </div>
+            <textarea  cols="30" rows="10" name="Сообщение" class="callback__textarea input-reset" placeholder="Комментарий"></textarea>
+            <button class="callback__button button-reset">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo">
+        <a href="#" class="logo">
+          <svg width="190" height="31">
+            <use  xlink:href="img/icons/icons.svg#Logo"></use>
+          </svg>
+        </a>
+        <p class="footer__logo-description description">Фотостудия High pass<sup class="reg">&reg;</sup> 2018-2020</p>
+      </div>
+      <div class="footer__citata">
+        <p class="footer__citata-text description">Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра.</p>
+        <p class="footer__citata-autor description">&copy;&nbsp;Имоджен Каннингем</p>
+      </div>
+      <div class="footer__social social">
+        <p class="footer__social-description description">Больше интересного:</p>
+        <div class="social__links">
+          <a href="" class="link-reset social__link">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="" class="link-reset social__link">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="" class="link-reset social__link">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#vk"></use>
+            </svg>
+          </a>
+        </div>
+          
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

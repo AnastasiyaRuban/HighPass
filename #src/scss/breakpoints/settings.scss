@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 23px;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .about-us__title,
+  .projects__title,
+  .contacts__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

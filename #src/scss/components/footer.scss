@@ -1,0 +1,61 @@
+.footer {
+  background-color: $colorDarc;
+
+  &__container {
+    @include flex-all-sb;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  &__logo {
+    @include flex-col;
+    align-self: flex-start;
+  }
+  &__logo a {
+    margin-bottom: 2px;
+  }
+
+  &__logo-description {
+    font-family: "TTFirsNeueRegular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #e9e9e9;
+  }
+
+  &__citata {
+    margin-right: 125px;
+    max-width: 361px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__citata-text {
+    color: $colorLight;
+  }
+
+  &__citata-autor {
+    color: #666;
+  }
+
+  &__social {
+    @include flex-col;
+    transform: translateY(-1px);
+  }
+
+  &__social-description {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorLight;
+  }
+}
+
+.social__links {
+  transform: translateX(2px);
+}
+
+.social__links .social__link {
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
+}

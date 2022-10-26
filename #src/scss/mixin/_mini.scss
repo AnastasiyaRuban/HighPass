@@ -1,0 +1,93 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin grid-tr-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin button {
+  width: fit-content;
+  padding: 13px 20px;
+  background-color: $colorOrange;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  border: 3px solid transparent;
+  color: $colorwhite;
+}
+
+@mixin button-hover {
+  background-color: $colorOrange;
+  border-color: transparent;
+}
+@mixin button-focus {
+  background-color: $colorFocus;
+  border-color: $colorOrange;
+}
+@mixin button-active {
+  background-color: $colorActive;
+}
+
+@mixin text-tt-24-700-darc {
+  font-family: "TTFirsNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  color: $colorDarc;
+}
+
+@mixin section-title {
+  font-family: "TTFirsNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+@mixin text-tt-24-22 {
+  font-family: "TTFirsNeueRegular";
+  font-size: 24px;
+  line-height: 22px;
+}
+
+@mixin placeholder {
+  font-size: 16px;
+  line-height: 19px;
+}

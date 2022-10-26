@@ -1,0 +1,87 @@
+.hero {
+  @include grid-tr-2;
+  grid-template-rows: minmax(630px, 1fr);
+  padding-top: 33px;
+  padding-bottom: 66px;
+  &__left {
+    @include flex-col;
+    @include bg-cover;
+    position: relative;
+    height: 100%;
+    padding: 62px 59px;
+    align-self: end;
+    justify-content: flex-end;
+    color: $colorwhite;
+    background-image: url("../img/hero/Photo.webp");
+  }
+
+  &__subtitle {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__title {
+    font-family: "TTFirsNeueBold";
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 700;
+  }
+
+  &__button {
+    @include button;
+    padding: 13px 20px;
+    &:hover {
+      background-color: $colorFocus;
+    }
+    &:active {
+      border-color: transparent;
+      background-color: $colorActive;
+    }
+    &:focus {
+      background-color: $colorOrange;
+      border-color: $colorActive;
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "description"
+      "photo";
+    gap: 25px;
+    & img {
+      height: 100%;
+    }
+  }
+
+  &__description {
+    @include text-tt-24-700-darc;
+    grid-area: description;
+  }
+  &__photo {
+    grid-area: photo;
+    @include grid-tr-2;
+    grid-template-rows: 300px 257px;
+    grid-template-areas:
+      "photo_1 photo_1"
+      "photo_2 photo_3";
+  }
+
+  &__photo-1 {
+    grid-area: photo_1;
+  }
+  &__photo-2 {
+    grid-area: photo_2;
+  }
+  &__photo-3 {
+    grid-area: photo_3;
+  }
+
+  &__teg {
+    top: 14px;
+    right: 14px;
+  }
+}

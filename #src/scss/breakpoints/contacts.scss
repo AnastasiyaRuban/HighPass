@@ -1,0 +1,175 @@
+@media (max-width: 1024px) {
+  .contacts {
+    padding-bottom: 68px;
+    &__container {
+      grid-template-columns: minmax(50%, 850px) 342px;
+    }
+  }
+  .map {
+    &__adress {
+      flex-direction: row-reverse;
+      bottom: 0;
+      top: auto;
+      left: -100%;
+      height: auto;
+      padding: 20px 20px 23px 30px;
+      opacity: 0.85;
+    }
+  }
+  .adress {
+    &__container {
+      max-width: 293px;
+      padding-top: 5px;
+    }
+    &__adress {
+      display: inline;
+      min-width: 100%;
+      margin-right: 6px;
+      line-height: 26px;
+    }
+    &__name {
+      margin-bottom: 7px;
+    }
+
+    &__tel {
+      display: inline-block;
+      & svg {
+        fill: #ff6e30;
+        transform: translateY(5px);
+      }
+    }
+
+    &__tel svg path {
+      fill: #ff6e30;
+    }
+
+    &__tel-link {
+      margin-left: -4px;
+      color: #ff6e30;
+    }
+  }
+
+  .adress.open {
+    left: 0;
+    right: 0;
+
+    top: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .contacts {
+    &__container {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, auto);
+      gap: 24px;
+    }
+  }
+  .adress {
+    &__container {
+      max-width: 406px;
+    }
+  }
+
+  .callback {
+    max-width: 466px;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts {
+    padding-bottom: 49px;
+
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    &__container {
+      grid-template-rows: 472px 429px;
+    }
+  }
+
+  .map {
+    position: absolute;
+    grid-row: 1/2;
+    left: 0;
+    right: 0;
+    width: 100%;
+    &__adress {
+      padding: 20px 15px 14px 20px;
+      max-width: none;
+      width: 100%;
+      left: calc(-100vw - 21px);
+    }
+  }
+  #map {
+    height: 472px;
+  }
+  .adress {
+    &__container {
+      max-width: 265px;
+    }
+
+    &__name {
+      margin-bottom: 11px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__adress {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__tel {
+      display: block;
+    }
+
+    &__tel-link {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .callback {
+    grid-row: 2/3;
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__description {
+      margin-bottom: 17px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__input {
+      height: 40px;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &__textarea {
+      padding: 11px 23px;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &__button {
+      padding: 9px 20px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .ymaps-2-1-79-map {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,51 @@
+.nav {
+  padding-bottom: 1px;
+  transform: translateY(-1px);
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 79px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-family: "TTFirsNeueRegular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $colorwhite;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -6px;
+      right: -6px;
+      bottom: -6px;
+      left: -6px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      background-color: $colorFocus;
+    }
+    &:hover {
+      color: $colorHover;
+    }
+
+    &:focus:not(:active)::before {
+      opacity: 1;
+    }
+    &:focus {
+      color: $colorwhite;
+    }
+    &:active::before {
+      opacity: 0;
+    }
+    &:active {
+      color: $colorActive;
+    }
+  }
+}

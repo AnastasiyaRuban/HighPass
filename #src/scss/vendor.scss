@@ -1,0 +1,17 @@
+@import "./vendor/normalize";
+
+.just-validate-error-label {
+  position: absolute;
+  top: 3px;
+  left: 23px;
+  font-family: "RobotoRegular";
+  font-size: 9px;
+  line-height: 11px;
+}
+.about-us__form-input.is-invalid {
+  border: 1px solid #f06666;
+}
+
+.callback__input.is-invalid {
+  border: 1px solid #ff3030;
+}
