@@ -1,9 +1,9 @@
-# Blanchard
+# HighPass
 
 ![](https://img.shields.io/badge/version-1.0.0-green)
 
 ___
-[Посетить сайт Blanchard](http://high-pass-skill.webtm.ru/)
+[Посетить сайт HighPass](http://high-pass-skill.webtm.ru/)
 
 ![](https://imageup.ru/img186/4053050/highpass.jpg)
 
