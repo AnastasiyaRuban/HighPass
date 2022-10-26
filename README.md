@@ -29,6 +29,6 @@ ___
 ___
 **Настройка проекта**
 
-<code>npm install <br>
-npm install -g gulp<br>
-gulp</code>
+<code>npm install </code><br>
+<code>npm install -g gulp</code><br>
+<code>gulp</code>
